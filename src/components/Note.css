@@ -1,0 +1,21 @@
+.note{
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px ;
+    width: 40%;
+    margin: 16px;
+    float: left;
+    /* margin: 10px 50px 20px 10px; */
+
+}
+.note h1{
+    font-size: 1.1rem; 
+    margin-bottom: 6px;
+}
+.note p{
+    font-size: 1.1rem;
+    /* margin-bottom: 10rem; */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}

@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import notes from "./components/notes";
+import Footer from "./components/Footer";
+import Note from "./components/Note";
+
+// const createNotes = (note) => (
+//   <Note key={note.id} title={note.title} content={note.content} />
+// );
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      {/* <Note titel={notes.title} /> */}
+      {notes.map((note) => (
+        <Note key={note.id} title={note.title} content={note.content} />
+      ))}
+      {/* <Note title={notes[0].title} content="sdjfklasjdf" /> */}
+      <Footer />
     </div>
   );
 }
